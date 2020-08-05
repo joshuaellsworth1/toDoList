@@ -26,12 +26,12 @@ function addTodo(event) {
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add("complete-btn");
-    todoDiv.append('completedButton');
+    todoDiv.appendChild(completedButton);
     //trash button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add("complete-btn");
-    todoDiv.append('trashButton');
+    todoDiv.appendChild(trashButton);
     //append to list
     todoList.appendChild(todoDiv);
 
